@@ -44,7 +44,7 @@ class SvgUri extends Component {
     'defs': (index, node, childs) =>
       <Defs key={index++}>{childs}</Defs>,
     'g': (index, node, childs, styleClasses) =>
-      <G key={index} {...this.obtainComponentAtts(node, styleClasses)}> {childs}</G>,
+      <G key={index} {...this.obtainComponentAtts(node, styleClasses)}>{childs}</G>,
     'clipPath': (index, node, childs, styleClasses) =>
       <ClipPath key={index} {...this.obtainComponentAtts(node, styleClasses)}>{childs}</ClipPath>,
     'path': (index, node, childs, styleClasses) =>
